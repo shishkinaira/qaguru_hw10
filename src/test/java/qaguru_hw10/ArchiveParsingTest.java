@@ -11,7 +11,6 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-
 public class ArchiveParsingTest {
 
     @Test
@@ -30,10 +29,10 @@ public class ArchiveParsingTest {
             }
 
 
-                ZipEntry entryPDF = zipFile.getEntry("Lovilee DIY_Daily Planner_French Blue.pdf");
-                try (InputStream stream = zipFile.getInputStream(entryPDF)) {
-                    PDF pdf = new PDF(stream);
-                    Assertions.assertEquals("Adobe InDesign CS5.5 (7.5)", pdf.creator);
+            ZipEntry entryPDF = zipFile.getEntry("Lovilee DIY_Daily Planner_French Blue.pdf");
+            try (InputStream stream = zipFile.getInputStream(entryPDF)) {
+                PDF pdf = new PDF(stream);
+                Assertions.assertEquals("Adobe InDesign CS5.5 (7.5)", pdf.creator);
             }
 
 

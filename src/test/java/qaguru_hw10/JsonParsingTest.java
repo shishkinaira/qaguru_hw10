@@ -21,7 +21,5 @@ public class JsonParsingTest {
         Assertions.assertEquals(user.Employees.get(0).phoneNumber,"123456");
         Assertions.assertEquals(user.Employees.get(0).emailAddress,"krish.lee@learningcontainer.com");
 
-        //подскажите пожалуйста почему воттакой вариант не сработал?
-        // Assertions.assertEquals(user.Employees.get(0).emailAddress).isEqualTo("krish.lee@learningcontainer.com");
     }
 }
