@@ -12,14 +12,14 @@ public class JsonParsingTest {
 
         File file = new File("src/test/resources/Sample-employee-JSON-data.json");
         EmployeesModel user = objectMapper.readValue(file, EmployeesModel.class);
-        Assertions.assertEquals(user.Employees.get(0).userId,"krish");
-        Assertions.assertEquals(user.Employees.get(0).jobTitle,"Developer");
-        Assertions.assertEquals(user.Employees.get(0).firstName,"Krish");
-        Assertions.assertEquals(user.Employees.get(0).lastName,"Lee");
-        Assertions.assertEquals(user.Employees.get(0).employeeCode,"E1");
-        Assertions.assertEquals(user.Employees.get(0).region,"CA");
-        Assertions.assertEquals(user.Employees.get(0).phoneNumber,"123456");
-        Assertions.assertEquals(user.Employees.get(0).emailAddress,"krish.lee@learningcontainer.com");
+        Assertions.assertEquals(user.employees.get(0).userId,"krish");
+        Assertions.assertEquals(user.employees.get(0).jobTitle,"Developer");
+        Assertions.assertEquals(user.employees.get(0).firstName,"Krish");
+        Assertions.assertEquals(user.employees.get(0).lastName,"Lee");
+        Assertions.assertEquals(user.employees.get(0).employeeCode,"E1");
+        Assertions.assertEquals(user.employees.get(0).region,"CA");
+        Assertions.assertEquals(user.employees.get(0).phoneNumber,"123456");
+        Assertions.assertEquals(user.employees.get(0).emailAddress,"krish.lee@learningcontainer.com");
 
     }
 }
